@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 min-h-screen font-sans antialiased;
+    overflow-x: hidden;
+  }
+
+  /* Ensure card headings render crisp and prominent */
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-slate-900 font-bold tracking-tight;
+  }
+
+  p {
+    @apply text-slate-600 leading-relaxed;
+  }
+}
+
+/* Light Theme Component & Card Enhancements */
+.bg-cyber-900 {
+  background-color: #ffffff !important;
+  border-color: #e2e8f0 !important;
+  box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.05), 0 1px 2px -1px rgba(15, 23, 42, 0.05);
+}
+
+.bg-cyber-950 {
+  background-color: #f8fafc !important;
+  border-color: #e2e8f0 !important;
+}
+
+.bg-cyber-850 {
+  background-color: #f1f5f9 !important;
+  border-color: #cbd5e1 !important;
+}
+
+.border-cyber-800 {
+  border-color: #e2e8f0 !important;
+}
+
+.border-cyber-700 {
+  border-color: #cbd5e1 !important;
+}
+
+/* Custom Light Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #0284c7;
+}
+
+/* Print Optimization for Executive Security Reports */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable-security-report, #printable-security-report * {
+    visibility: visible;
+  }
+  #printable-security-report {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: #ffffff !important;
+    color: #000000 !important;
+    padding: 20px !important;
+  }
+  #printable-security-report * {
+    color: #000000 !important;
+    border-color: #cccccc !important;
+    background: transparent !important;
+  }
+}

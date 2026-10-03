@@ -1,0 +1,20 @@
+{
+  "name": "healthshield-ai-root",
+  "version": "1.0.0",
+  "description": "HealthShield AI – Privacy-Preserving Cyber Threat Detection in Healthcare Systems",
+  "private": true,
+  "scripts": {
+    "install:all": "npm --prefix backend install && npm --prefix frontend install",
+    "backend": "npm --prefix backend run dev",
+    "frontend": "npm --prefix frontend run dev"
+  },
+  "keywords": [
+    "federated-learning",
+    "cybersecurity",
+    "groq-ai",
+    "healthcare",
+    "iomt"
+  ],
+  "author": "HealthShield AI Team",
+  "license": "MIT"
+}

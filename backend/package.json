@@ -1,0 +1,27 @@
+{
+  "name": "healthshield-ai-backend",
+  "version": "1.0.0",
+  "description": "HealthShield AI - Secure Backend API for Groq Cyber Threat Analysis & Federated Learning Reporting",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "cybersecurity",
+    "federated-learning",
+    "groq-ai",
+    "healthcare",
+    "iomt"
+  ],
+  "author": "HealthShield AI Team",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "groq-sdk": "^0.15.0",
+    "morgan": "^1.10.0"
+  }
+}
